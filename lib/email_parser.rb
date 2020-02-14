@@ -9,7 +9,7 @@ class EmailAddressParser
     x = @email_addresses.split(/[,\s]/)
     parsed_array = []
     x.each do |email_address|
-      if !x.include?(email_address)
+      if !parsed_array.include?(email_address) && !(email_address == "")
         parsed_array << email_address
       end
     end
