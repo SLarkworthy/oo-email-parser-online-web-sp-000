@@ -7,13 +7,13 @@ class EmailAddressParser
   
   def parse
     x = @email_addresses.split(/[,\s]/)
-    # parsed_array = []
-    # x.each do |email_address|
-    #   if !x.include?(email_address)
-    #     parsed_array << email_address
-    #   end
-    # end
-    # parsed_array
+    parsed_array = []
+    x.each do |email_address|
+      if !x.include?(email_address)
+        parsed_array << email_address
+      end
+    end
+    parsed_array
   end
   
 end
